@@ -1,0 +1,21 @@
+@import url('https://fonts.cdnfonts.com/css/bodoniflf');
+
+h1, h2, p {
+    font-family: 'BodoniFLF', sans-serif;
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 98px;
+    font-weight: 500;
+    line-height: 80px;
+}
+
+p {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27.5px;
+}
