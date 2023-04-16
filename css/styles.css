@@ -57,24 +57,63 @@ h1, h3 {
     text-align: center;
 }
 
+.texto {
+    position: relative;
+    color: antiquewhite;
+    margin-left: 400px;
+    top: 200px;
+    padding-bottom: 145px;
+}
+
+.texto-title {
+    font-size: 98px;
+    line-height: 80px;
+    font-weight: 500;
+}
+
+#txt1 {
+    top: 200px;
+}
+
 p {
     font-weight: 500;
     font-size: 22px;
     line-height: 27.5px;
-}
-
-.linha {
-    position: relative;
-    height: 100px;
-    width: 0px;
-    top: -2250px;
-    margin-right: auto;
-    margin-left: auto;
-    border: 5px solid #b1fa33;
+    padding-top: 76px;
 }
 
 .background {
     position: relative;
     top: 867px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 2.6%, #000218 100%);
+    height: 6358px;
+}
+
+.vl {
+    border-left: 6px solid #B1FA33;
+    height: 5348px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 958px;
+}
+
+.area1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 1000px;
+}
+
+.content--area1 {
+    height: 735px;
+}
+
+.area1--img1 {
+    background-image: url(../img/cena-porta.png);
+    background-position: right;
+    height: 299px;
+    width: 449px;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
 }
