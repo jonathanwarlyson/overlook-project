@@ -66,6 +66,11 @@ p {
     line-height: 27.5px;
     padding-top: 76px;
     color: antiquewhite;
+    text-indent: 30px;
+}
+
+p + p {
+  padding-top: 10px;
 }
 
 .pic {
