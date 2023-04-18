@@ -2,13 +2,6 @@
 
 * {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    min-height: 100vh;
-    overflow-x: hidden;
 }
 
 .parallax {
@@ -57,22 +50,13 @@ h1, h3 {
     text-align: center;
 }
 
-.texto {
-    position: relative;
-    color: antiquewhite;
-    margin-left: 400px;
-    top: 200px;
-    padding-bottom: 145px;
-}
 
-.texto-title {
+.txt-title {
     font-size: 98px;
+    margin: 0;
+    color: antiquewhite;
     line-height: 80px;
     font-weight: 500;
-}
-
-#txt1 {
-    top: 200px;
 }
 
 p {
@@ -80,7 +64,112 @@ p {
     font-size: 22px;
     line-height: 27.5px;
     padding-top: 76px;
+    color: antiquewhite;
 }
+
+.pic {
+    border-radius: 10px;
+}
+
+.container1 {  
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "text1 image1"
+      ". .";
+    margin: 0;
+    top: 90px;
+  }
+  
+  .image1 {  display: grid;
+    grid-template-columns: 0.5fr 1.3fr 1.2fr;
+    grid-template-rows: 0.8fr 1.8fr 0.3fr 2fr 0.9fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". image--1 ."
+      ". . ."
+      ". image--2 ."
+      ". . .";
+    grid-area: image1;
+    justify-content: center;
+}
+  
+  .image--1 { 
+    display: flex;
+    justify-content: center;
+    grid-area: image--1; 
+}
+  
+  .image--2 { 
+    grid-area: image--2;
+    display: flex;
+    align-self: center; 
+}
+  
+  .text1 { 
+    display: grid; 
+    grid-template-columns: 1.1fr 1.3fr 0.2fr; 
+    grid-template-rows: 0.5fr 2.3fr 0.2fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        ". . ."
+        ". text--1 ."
+        ". . ."; 
+    grid-area: text1;  
+}
+
+.text--1 { grid-area: text--1; }
+
+.container2 {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.5fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "image2 text2"
+      ". .";
+    position: relative;
+    top: 90px;
+  }
+  
+  .image2 {  display: grid;
+    grid-template-columns: 1.3fr 1.3fr 0.4fr;
+    grid-template-rows: 0.5fr 1.8fr 0.3fr 1.7fr 0.7fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". image--3 ."
+      ". . ."
+      ". image--4 ."
+      ". . .";
+    grid-area: image2;
+  }
+  
+  .image--3 { grid-area: image--3; }
+  
+  .image--4 { grid-area: image--4; }
+  
+  .text2 {  display: grid;
+    grid-template-columns: 0.4fr 1.3fr 1fr;
+    grid-template-rows: 0.2fr 2.5fr 0.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". text--2 ."
+      ". . .";
+    grid-area: text2;
+  }
+  
+  .text--2 { grid-area: text--2; }
+  
 
 .background {
     position: relative;
@@ -98,22 +187,3 @@ p {
     top: 958px;
 }
 
-.area1 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    height: 1000px;
-}
-
-.content--area1 {
-    height: 735px;
-}
-
-.area1--img1 {
-    background-image: url(../img/cena-porta.png);
-    background-position: right;
-    height: 299px;
-    width: 449px;
-    top: 50%;
-    position: relative;
-    transform: translateY(-50%);
-}
