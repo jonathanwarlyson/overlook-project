@@ -1,4 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/bodoniflf');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 * {
     margin: 0;
@@ -69,6 +70,7 @@ p {
 
 .pic {
     border-radius: 10px;
+    box-shadow: -6px 8px 6px rgba(0, 0, 0, 0.2);
 }
 
 .container1 {  
@@ -82,11 +84,11 @@ p {
       "text1 image1"
       ". .";
     margin: 0;
-    top: 90px;
+    top: 10px;
   }
   
   .image1 {  display: grid;
-    grid-template-columns: 0.5fr 1.3fr 1.2fr;
+    grid-template-columns: 0.3fr 1.3fr 1.1fr;
     grid-template-rows: 0.8fr 1.8fr 0.3fr 2fr 0.9fr;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -114,7 +116,7 @@ p {
   
   .text1 { 
     display: grid; 
-    grid-template-columns: 1.1fr 1.3fr 0.2fr; 
+    grid-template-columns: 1.1fr 1.3fr 0.3fr; 
     grid-template-rows: 0.5fr 2.3fr 0.2fr; 
     gap: 0px 0px; 
     grid-template-areas: 
@@ -128,18 +130,18 @@ p {
 
 .container2 {  display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1.5fr 0.5fr;
+    grid-template-rows: 1.5fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
       "image2 text2"
       ". .";
     position: relative;
-    top: 90px;
+    top: 10px;
   }
   
   .image2 {  display: grid;
-    grid-template-columns: 1.3fr 1.3fr 0.4fr;
+    grid-template-columns: 1.1fr 1.3fr 0.3fr;
     grid-template-rows: 0.5fr 1.8fr 0.3fr 1.7fr 0.7fr;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -152,12 +154,20 @@ p {
     grid-area: image2;
   }
   
-  .image--3 { grid-area: image--3; }
+  .image--3 { 
+    grid-area: image--3;
+    display: flex;
+    justify-content: center;
+}
   
-  .image--4 { grid-area: image--4; }
+  .image--4 { 
+    grid-area: image--4;
+    display: flex;
+    justify-content: center; 
+}
   
   .text2 {  display: grid;
-    grid-template-columns: 0.4fr 1.3fr 1fr;
+    grid-template-columns: 0.3fr 1.3fr 1.1fr;
     grid-template-rows: 0.2fr 2.5fr 0.3fr;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -169,21 +179,375 @@ p {
   }
   
   .text--2 { grid-area: text--2; }
+
+  .container3 {  
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "text3 image3"
+      ". .";
+    margin: 0;
+    top: 0px;
+  }
   
+  .image3 {  display: grid;
+    grid-template-columns: 0.3fr 1.3fr 1.1fr;
+    grid-template-rows: 0.3fr 1.8fr 0.2fr 2fr 0.9fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". image--5 ."
+      ". . ."
+      ". image--6 ."
+      ". . .";
+    grid-area: image3;
+    justify-content: center;
+}
+  
+  .image--5 { 
+    display: flex;
+    justify-content: center;
+    grid-area: image--5; 
+}
+  
+  .image--6 { 
+    grid-area: image--6;
+    display: flex;
+    align-self: center; 
+}
+  
+  .text3 { 
+    display: grid; 
+    grid-template-columns: 1.1fr 1.3fr 0.3fr; 
+    grid-template-rows: 0.2fr 2.3fr 0.2fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        ". . ."
+        ". text--3 ."
+        ". . ."; 
+    grid-area: text3;  
+}
+
+.text--3 { grid-area: text--3; }
+
+.container4 {  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "image4 text4"
+    ". .";
+  position: relative;
+  top: -140px;
+}
+
+.image4 {  
+  display: grid;
+  grid-template-columns: 1.1fr 1.3fr 0.3fr;
+  grid-template-rows: 0.5fr 1.8fr 0.1fr 1.7fr 0.7fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    ". image--7 ."
+    ". . ."
+    ". image--8 ."
+    ". . .";
+  grid-area: image4;
+}
+
+.image--7 { 
+  grid-area: image--7;
+  display: flex;
+  justify-content: center;
+}
+
+.image--8 { 
+  grid-area: image--8;
+  display: flex;
+  justify-content: center; 
+}
+
+.text4 {  
+  display: grid;
+  grid-template-columns: 0.3fr 1.3fr 1.1fr;
+  grid-template-rows: 0.2fr 2.5fr 0.3fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    ". text--4 ."
+    ". . .";
+  grid-area: text4;
+}
+
+.text--4 { grid-area: text--4; }
+
+.container5 {  
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "text5 image5"
+    ". .";
+  margin: 0;
+  top: -180px;
+}
+
+.image5 {  display: grid;
+  grid-template-columns: 0.3fr 1.3fr 1.1fr;
+  grid-template-rows: 0.5fr 2.5fr 0.3fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    ". image--9 ."
+    ". . .";
+  grid-area: image5;
+  justify-content: center;
+}
+
+.image--9 { 
+  display: flex;
+  justify-content: center;
+  grid-area: image--9; 
+}
+
+.text5 { 
+  display: grid; 
+  grid-template-columns: 1.1fr 1.3fr 0.3fr; 
+  grid-template-rows: 0.4fr 2.3fr 0.2fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+      ". . ."
+      ". text--5 ."
+      ". . ."; 
+  grid-area: text5;  
+}
+
+.text--5 { grid-area: text--5; }
+
+.container6 {  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "image6 text6"
+    ". .";
+  position: relative;
+  top: -250px;
+}
+
+.image6 {  
+  display: grid;
+  grid-template-columns: 1.1fr 1.3fr 0.3fr;
+  grid-template-rows: 0.4fr 1.2fr 0.3fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    ". image--10 ."
+    ". . .";
+  grid-area: image6;
+}
+
+.image--10 { 
+  grid-area: image--10;
+  display: flex;
+  justify-content: center;
+}
+
+.text6 {  
+  display: grid;
+  grid-template-columns: 0.3fr 1.3fr 1.1fr;
+  grid-template-rows: 0.3fr 2.5fr 0.3fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    ". text--6 ."
+    ". . .";
+  grid-area: text6;
+}
+
+.text--6 { grid-area: text--6; }
 
 .background {
     position: relative;
     top: 867px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 2.6%, #000218 100%);
-    height: 6358px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 2.6%, #070C42 100%);
+    height: 6325px;
 }
 
 .vl {
     border-left: 6px solid #B1FA33;
-    height: 5348px;
+    height: 5350px;
     position: absolute;
     left: 50%;
     margin-left: -3px;
-    top: 958px;
+    top: 950px;
 }
 
+.ball1 {
+  background: #B1FA33;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  display: flex;
+  margin-left: -15px;
+  top: 920px;
+}
+
+.ball2 {
+  background: #B1FA33;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  display: flex;
+  margin-left: -15px;
+  top: 1785px;
+}
+
+.ball3 {
+  background: #B1FA33;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  display: flex;
+  margin-left: -15px;
+  top: 2700px;
+}
+
+.ball4 {
+  background: #B1FA33;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  display: flex;
+  margin-left: -15px;
+  top: 3550px;
+}
+
+.ball5 {
+  background: #B1FA33;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  display: flex;
+  margin-left: -15px;
+  top: 4480px;
+}
+
+.ball6 {
+  background: #B1FA33;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  display: flex;
+  margin-left: -15px;
+  top: 5350px;
+}
+
+.ball7 {
+  background: #B1FA33;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  display: flex;
+  margin-left: -30px;
+  top: 6240px;
+}
+
+.footer{
+  position: relative;
+  margin: 0 auto;
+  color: antiquewhite;
+  text-align: center;
+  top: 100px;
+}
+
+.footer-title {
+  font-family: 'BodoniFLF';
+  font-weight: 500;
+  font-size: 98px;
+  line-height: 80px;
+}
+
+.footer-subtitle {
+  font-family: 'BodoniFLF';
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 80px;
+  padding: 10px;
+}
+
+.button {
+  width: 380px; 
+  height: 96px;
+  background: #B1FA33;
+  border-radius: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  box-shadow: -6px 8px 4px rgba(0, 0, 0, 0.4);
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Bebas Neue';
+  font-weight: 400;
+  font-size: 69px;
+  color: #000000;
+}
+.btn {
+  padding: 20px;
+  padding-bottom: 46px;
+}
+
+.container {
+  position: relative;
+  margin-bottom: 0;
+  top: 40px;
+  justify-content: center;
+  display: flex;
+}
+
+#image {
+  position: absolute;
+  width: 100%;
+}
+
+#texto {
+  position: absolute;
+  top: 135px;
+  color: antiquewhite;
+  font-size: 21px;
+  top: 425px;
+}
